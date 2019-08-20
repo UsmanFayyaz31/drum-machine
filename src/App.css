@@ -32,8 +32,14 @@
   }
 }
 
-.drum-pad:hover {
+.drum-pad:hover, #toggleButton:hover {
   cursor: pointer;
+}
+
+.drum-pad:hover {
+  background-color: rgb(145, 137, 137);
+  color: white;
+  box-shadow: 6px 6px 5px -2px rgb(255, 255, 255);
 }
 
 .drum-pad {
