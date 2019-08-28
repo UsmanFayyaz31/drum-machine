@@ -17,7 +17,8 @@ class DrumMachine extends React.Component {
 
     this.state = {
       title: "",
-      isOn: true
+      isOn: true,
+      audio: null
     }
     this.playSound = this.playSound.bind(this);
     this.handleKeys = this.handleKeys.bind(this);
@@ -28,11 +29,14 @@ class DrumMachine extends React.Component {
   power() {
     var temp = this.state.isOn;
 
-    if(temp) {
+    if (temp) {
       this.setState({
         isOn: false,
         title: ""
       })
+      if (this.state.audio !== null) {
+        this.state.audio.pause();
+      }
     } else {
       this.setState({
         isOn: true
@@ -41,78 +45,115 @@ class DrumMachine extends React.Component {
   }
 
   sound(temp) {
+    console.log(temp);
     switch (temp) {
       case "q":
       case "Q":
-        new Audio(forQ).play();
+        if (this.state.audio !== null) {
+          this.state.audio.pause();
+        }
         this.setState({
-          title: "Tamborine"
+          title: "Tamborine",
+          audio: new Audio(forQ)
         })
+        this.state.audio.play();
         break;
 
       case "w":
       case "W":
-        new Audio(forW).play();
+        if (this.state.audio !== null) {
+          this.state.audio.pause();
+        }
         this.setState({
-          title: "Almost The Doors"
+          title: "Almost The Doors",
+          audio: new Audio(forW)
         })
+        this.state.audio.play();
         break;
 
       case "e":
       case "E":
-        new Audio(forE).play();
-        this.setState({
-          title: "Christmas Rhodes"
-        })
-        break;
+          if (this.state.audio !== null) {
+            this.state.audio.pause();
+          }
+          this.setState({
+            title: "Christmas Rhodes",
+            audio: new Audio(forE)
+          })
+          this.state.audio.play();
+          break;
 
       case "a":
       case "A":
-        new Audio(forA).play();
-        this.setState({
-          title: "Drop Effect"
-        })
-        break;
+          if (this.state.audio !== null) {
+            this.state.audio.pause();
+          }
+          this.setState({
+            title: "Drop Effect",
+            audio: new Audio(forA)
+          })
+          this.state.audio.play();
+          break;
 
       case "s":
       case "S":
-        new Audio(forS).play();
-        this.setState({
-          title: "Epiano Two chords"
-        })
-        break;
+          if (this.state.audio !== null) {
+            this.state.audio.pause();
+          }
+          this.setState({
+            title: "Epiano Two chords",
+            audio: new Audio(forS)
+          })
+          this.state.audio.play();
+          break;
 
       case "d":
       case "D":
-        new Audio(forD).play();
-        this.setState({
-          title: "Flexi Up"
-        })
-        break;
+          if (this.state.audio !== null) {
+            this.state.audio.pause();
+          }
+          this.setState({
+            title: "Flexi Up",
+            audio: new Audio(forD)
+          })
+          this.state.audio.play();
+          break;
 
       case "z":
       case "Z":
-        new Audio(forZ).play();
-        this.setState({
-          title: "Gun Cock"
-        })
-        break;
+          if (this.state.audio !== null) {
+            this.state.audio.pause();
+          }
+          this.setState({
+            title: "Gun Cock",
+            audio: new Audio(forZ)
+          })
+          this.state.audio.play();
+          break;
 
       case "x":
       case "X":
-        new Audio(forX).play();
-        this.setState({
-          title: "Rain"
-        })
-        break;
+          if (this.state.audio !== null) {
+            this.state.audio.pause();
+          }
+          this.setState({
+            title: "Rain",
+            audio: new Audio(forX)
+          })
+          this.state.audio.play();
+          break;
 
       case "c":
       case "C":
-        new Audio(forC).play();
-        this.setState({
-          title: "Startup Effect"
-        })
-        break;
+          if (this.state.audio !== null) {
+            this.state.audio.pause();
+          }
+          this.setState({
+            title: "Startup Effect",
+            audio: new Audio(forC)
+          })
+          this.state.audio.play();
+          break;
 
       default:
         break;
@@ -120,13 +161,13 @@ class DrumMachine extends React.Component {
   }
 
   playSound(event) {
-    if(this.state.isOn) {
+    if (this.state.isOn) {
       this.sound(event.currentTarget.id);
     }
   }
 
   handleKeys(event) {
-    if(this.state.isOn) {
+    if (this.state.isOn) {
       this.sound(event.key);
     }
   }
@@ -150,7 +191,7 @@ class DrumMachine extends React.Component {
         <Button value="X" sound={this.playSound} />
         <Button value="C" sound={this.playSound} />
         <h3>{(on) ? "Power On" : "Power Off"}</h3>
-        <div id="toggleButton" onClick={this.power} style={(on) ? {backgroundColor: 'red'} : {backgroundColor: 'white'}}></div>
+        <div id="toggleButton" onClick={this.power} style={(on) ? { backgroundColor: 'green' } : { backgroundColor: 'white' }}></div>
       </div>
     );
   }
@@ -160,6 +201,10 @@ function App() {
   return (
     <div className="App">
       <DrumMachine />
+      <div id="author">
+          <p>Designed and Coded by</p>
+          <a href="https://github.com/UsmanFayyaz/drum-machine">Usman Fayyaz</a>
+        </div>
     </div>
   );
 }
