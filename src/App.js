@@ -1,14 +1,14 @@
 import React from 'react';
 import Button from './components/button';
-import forQ from './sounds/Tamborine2.wav';
-import forW from './sounds/almost-the-doors.wav';
-import forE from './sounds/christmas_rhodes.wav';
-import forA from './sounds/Drop Effect 3.wav';
-import forS from './sounds/epiano-two-chords.wav';
-import forD from './sounds/Flexi up 1.wav';
-import forZ from './sounds/GunCock01.wav';
-import forX from './sounds/RAIN.wav';
-import forC from './sounds/Startup Effect.wav';
+import forQ from './sounds/Clap.mp3';
+import forW from './sounds/Closed-HH.mp3';
+import forE from './sounds/Kick_n_Hat.mp3';
+import forA from './sounds/Kick.mp3';
+import forS from './sounds/Open-HH.mp3';
+import forD from './sounds/punchy_kick.mp3';
+import forZ from './sounds/Shaker.mp3';
+import forX from './sounds/side_stick.mp3';
+import forC from './sounds/Snare.mp3';
 import './App.css';
 
 class DrumMachine extends React.Component {
@@ -53,7 +53,7 @@ class DrumMachine extends React.Component {
           this.state.audio.pause();
         }
         this.setState({
-          title: "Tamborine",
+          title: "Clap",
           audio: new Audio(forQ)
         })
         this.state.audio.play();
@@ -65,7 +65,7 @@ class DrumMachine extends React.Component {
           this.state.audio.pause();
         }
         this.setState({
-          title: "Almost The Doors",
+          title: "Closed-HH",
           audio: new Audio(forW)
         })
         this.state.audio.play();
@@ -77,7 +77,7 @@ class DrumMachine extends React.Component {
             this.state.audio.pause();
           }
           this.setState({
-            title: "Christmas Rhodes",
+            title: "Kick n Hat",
             audio: new Audio(forE)
           })
           this.state.audio.play();
@@ -89,7 +89,7 @@ class DrumMachine extends React.Component {
             this.state.audio.pause();
           }
           this.setState({
-            title: "Drop Effect",
+            title: "Kick",
             audio: new Audio(forA)
           })
           this.state.audio.play();
@@ -101,7 +101,7 @@ class DrumMachine extends React.Component {
             this.state.audio.pause();
           }
           this.setState({
-            title: "Epiano Two chords",
+            title: "Open-HHH",
             audio: new Audio(forS)
           })
           this.state.audio.play();
@@ -113,7 +113,7 @@ class DrumMachine extends React.Component {
             this.state.audio.pause();
           }
           this.setState({
-            title: "Flexi Up",
+            title: "Punchy Kick",
             audio: new Audio(forD)
           })
           this.state.audio.play();
@@ -125,7 +125,7 @@ class DrumMachine extends React.Component {
             this.state.audio.pause();
           }
           this.setState({
-            title: "Gun Cock",
+            title: "Shaker",
             audio: new Audio(forZ)
           })
           this.state.audio.play();
@@ -137,7 +137,7 @@ class DrumMachine extends React.Component {
             this.state.audio.pause();
           }
           this.setState({
-            title: "Rain",
+            title: "Side Stick",
             audio: new Audio(forX)
           })
           this.state.audio.play();
@@ -149,7 +149,7 @@ class DrumMachine extends React.Component {
             this.state.audio.pause();
           }
           this.setState({
-            title: "Startup Effect",
+            title: "Snare",
             audio: new Audio(forC)
           })
           this.state.audio.play();
