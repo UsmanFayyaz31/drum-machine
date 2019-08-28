@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/drum-machine/static/css/main.47dd1a10.chunk.css",
-    "main.js": "/drum-machine/static/js/main.9083d3e5.chunk.js",
-    "main.js.map": "/drum-machine/static/js/main.9083d3e5.chunk.js.map",
+    "main.js": "/drum-machine/static/js/main.e6dab617.chunk.js",
+    "main.js.map": "/drum-machine/static/js/main.e6dab617.chunk.js.map",
     "runtime~main.js": "/drum-machine/static/js/runtime~main.4626f334.js",
     "runtime~main.js.map": "/drum-machine/static/js/runtime~main.4626f334.js.map",
     "static/js/2.279d7d06.chunk.js": "/drum-machine/static/js/2.279d7d06.chunk.js",
     "static/js/2.279d7d06.chunk.js.map": "/drum-machine/static/js/2.279d7d06.chunk.js.map",
     "index.html": "/drum-machine/index.html",
-    "precache-manifest.7f1ecf42eee2a0b93b3adf821212e82d.js": "/drum-machine/precache-manifest.7f1ecf42eee2a0b93b3adf821212e82d.js",
+    "precache-manifest.85262ffb62c55d6d7db222db28c6b65d.js": "/drum-machine/precache-manifest.85262ffb62c55d6d7db222db28c6b65d.js",
     "service-worker.js": "/drum-machine/service-worker.js",
     "static/css/main.47dd1a10.chunk.css.map": "/drum-machine/static/css/main.47dd1a10.chunk.css.map",
-    "static/media/Drop Effect 3.wav": "/drum-machine/static/media/Drop Effect 3.ba2e05f4.wav",
-    "static/media/Flexi up 1.wav": "/drum-machine/static/media/Flexi up 1.520de029.wav",
-    "static/media/GunCock01.wav": "/drum-machine/static/media/GunCock01.cba1eb4d.wav",
-    "static/media/RAIN.wav": "/drum-machine/static/media/RAIN.fabf7d01.wav",
-    "static/media/Startup Effect.wav": "/drum-machine/static/media/Startup Effect.301d901e.wav",
-    "static/media/Tamborine2.wav": "/drum-machine/static/media/Tamborine2.76bb0918.wav",
-    "static/media/almost-the-doors.wav": "/drum-machine/static/media/almost-the-doors.37442c17.wav",
-    "static/media/christmas_rhodes.wav": "/drum-machine/static/media/christmas_rhodes.0924284d.wav",
-    "static/media/epiano-two-chords.wav": "/drum-machine/static/media/epiano-two-chords.f139f2ea.wav"
+    "static/media/Clap.mp3": "/drum-machine/static/media/Clap.3062daca.mp3",
+    "static/media/Closed-HH.mp3": "/drum-machine/static/media/Closed-HH.abe03961.mp3",
+    "static/media/Kick.mp3": "/drum-machine/static/media/Kick.09fda256.mp3",
+    "static/media/Kick_n_Hat.mp3": "/drum-machine/static/media/Kick_n_Hat.200b4bd3.mp3",
+    "static/media/Open-HH.mp3": "/drum-machine/static/media/Open-HH.5c9f8087.mp3",
+    "static/media/Shaker.mp3": "/drum-machine/static/media/Shaker.561c9a54.mp3",
+    "static/media/Snare.mp3": "/drum-machine/static/media/Snare.cd861874.mp3",
+    "static/media/punchy_kick.mp3": "/drum-machine/static/media/punchy_kick.a6a991c5.mp3",
+    "static/media/side_stick.mp3": "/drum-machine/static/media/side_stick.123a99c7.mp3"
   }
 }
