@@ -73,87 +73,87 @@ class DrumMachine extends React.Component {
 
       case "e":
       case "E":
-          if (this.state.audio !== null) {
-            this.state.audio.pause();
-          }
-          this.setState({
-            title: "Kick n Hat",
-            audio: new Audio(forE)
-          })
-          this.state.audio.play();
-          break;
+        if (this.state.audio !== null) {
+          this.state.audio.pause();
+        }
+        this.setState({
+          title: "Kick n Hat",
+          audio: new Audio(forE)
+        })
+        this.state.audio.play();
+        break;
 
       case "a":
       case "A":
-          if (this.state.audio !== null) {
-            this.state.audio.pause();
-          }
-          this.setState({
-            title: "Kick",
-            audio: new Audio(forA)
-          })
-          this.state.audio.play();
-          break;
+        if (this.state.audio !== null) {
+          this.state.audio.pause();
+        }
+        this.setState({
+          title: "Kick",
+          audio: new Audio(forA)
+        })
+        this.state.audio.play();
+        break;
 
       case "s":
       case "S":
-          if (this.state.audio !== null) {
-            this.state.audio.pause();
-          }
-          this.setState({
-            title: "Open-HHH",
-            audio: new Audio(forS)
-          })
-          this.state.audio.play();
-          break;
+        if (this.state.audio !== null) {
+          this.state.audio.pause();
+        }
+        this.setState({
+          title: "Open-HHH",
+          audio: new Audio(forS)
+        })
+        this.state.audio.play();
+        break;
 
       case "d":
       case "D":
-          if (this.state.audio !== null) {
-            this.state.audio.pause();
-          }
-          this.setState({
-            title: "Punchy Kick",
-            audio: new Audio(forD)
-          })
-          this.state.audio.play();
-          break;
+        if (this.state.audio !== null) {
+          this.state.audio.pause();
+        }
+        this.setState({
+          title: "Punchy Kick",
+          audio: new Audio(forD)
+        })
+        this.state.audio.play();
+        break;
 
       case "z":
       case "Z":
-          if (this.state.audio !== null) {
-            this.state.audio.pause();
-          }
-          this.setState({
-            title: "Shaker",
-            audio: new Audio(forZ)
-          })
-          this.state.audio.play();
-          break;
+        if (this.state.audio !== null) {
+          this.state.audio.pause();
+        }
+        this.setState({
+          title: "Shaker",
+          audio: new Audio(forZ)
+        })
+        this.state.audio.play();
+        break;
 
       case "x":
       case "X":
-          if (this.state.audio !== null) {
-            this.state.audio.pause();
-          }
-          this.setState({
-            title: "Side Stick",
-            audio: new Audio(forX)
-          })
-          this.state.audio.play();
-          break;
+        if (this.state.audio !== null) {
+          this.state.audio.pause();
+        }
+        this.setState({
+          title: "Side Stick",
+          audio: new Audio(forX)
+        })
+        this.state.audio.play();
+        break;
 
       case "c":
       case "C":
-          if (this.state.audio !== null) {
-            this.state.audio.pause();
-          }
-          this.setState({
-            title: "Snare",
-            audio: new Audio(forC)
-          })
-          this.state.audio.play();
-          break;
+        if (this.state.audio !== null) {
+          this.state.audio.pause();
+        }
+        this.setState({
+          title: "Snare",
+          audio: new Audio(forC)
+        })
+        this.state.audio.play();
+        break;
 
       default:
         break;
@@ -202,9 +202,9 @@ function App() {
     <div className="App">
       <DrumMachine />
       <div id="author">
-          <p>Designed and Coded by</p>
-          <a href="https://github.com/UsmanFayyaz/drum-machine">Usman Fayyaz</a>
-        </div>
+        <p>Designed and Coded by <b>Usman Fayyaz</b>.</p> <br />
+        <a href="https://github.com/UsmanFayyaz/drum-machine">Link to github repository.</a>
+      </div>
     </div>
   );
 }
